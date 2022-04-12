@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блок</title>
+  <style>
+    body {
+      background: rgb(231, 231, 189);
+    }
+    section {
+      margin: auto;
+      width: 300px;
+      font-family: 'Courier New', Courier, monospace;
+      background: #fff;
+      box-shadow: 0 0 5px black;
+    }
+    .box-content {
+      text-align: center;
+      padding: 10px;
+    }
+    .box-content h2{
+      margin-top: 0;
+    }
+    .box-content h2::after {
+      content: '';
+      display: block;
+      width: 30px;
+      margin: 10px auto;
+      border-bottom: 5px dotted #fd644a;
+      
+    }
+    .box-content button {
+      background: #fd644a;
+      border: none;
+      border-radius: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <section class="box-content">
+    <img src="./files/trees-pic.jpeg" alt="">
+    <h2>Туристический цикл</h2>
+    <p>Большая часть территории однородно вызывает закрытый аквапарк.</p>
+    <button>Подробнее</button>
+  </section>
+</body>
+</html>
